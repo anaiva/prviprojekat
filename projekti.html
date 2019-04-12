@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Projekti</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <style>
+        img {
+            width: 100%;
+            height: 170px;
+
+
+        }
+        .column {
+            max-width: 30%;
+            
+        }
+        #prviR {
+            border: 7px dotted violet;
+            background-image: linear-gradient(rgb(34, 102, 187), violet);
+        }
+        #drugiR {
+            border: 7px dotted yellowgreen;
+            background-image: linear-gradient(rgb(34, 102, 187), yellowgreen);
+        }
+        #treciR {
+            border: 7px dotted gold;
+            background-image: linear-gradient(rgb(34, 102, 187), gold);
+        }
+        .golborder, .gborder, .vborder  {
+            border: 5px solid
+        }
+        .gborder {
+            border-color: yellowgreen;
+        }
+  
+        .vborder {
+            border-color: violet;
+        }
+        .golborder {
+            border-color: gold;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark mb-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseid">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapseid">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="./omeni.html">O meni</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="./projekti.html" active>Projekti</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="./kontaktstrana.html">Kontakt</a>
+
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="row mx-auto mt-5  w-75 d-flex justify-content-around">
+            <div id="prviR" class="column p-3 m-3 ">
+               <a href="https://explore-serbia.rs/" target="blank"><img class="rounded my-1 gborder" src="./slike/logo-small-resized.png" alt="Explore Serbia"
+                    style="background-color:whitesmoke;"></a>
+                    <a href="https://www.kamenagora.com/o-kamenoj-gori/" target="blank"><img class="rounded my-1 golborder" src="./slike/stari_hrast.jpg" alt="stari hrast Kamena Gora"></a>
+
+            </div>
+            <div id="drugiR" class="column drugiRed p-3 m-3">
+                <a href="https://www.lpzoo.org/" target="blank"><img class="rounded my-1 golborder" src="./slike/WP_20180614_10_21_48_Pro.jpg" alt=Akvarijum"></a>
+                <a href="https://sr.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BF%D0%B0%D0%BE%D0%BD%D0%B8%D0%BA" target="blank"><img class="rounded my-1 vborder" src="./slike/WP_20180128_15_01_21_Pro__highres.jpg" alt="Kop"></a>
+
+            </div>
+
+            <div id="treciR" class="column p-3 m-3">
+                <a href="https://sh.wikipedia.org/wiki/Chicago" target="blank"><img class="rounded my-1 vborder" src="./slike/WP_20180613_17_33_37_Pro__highres.jpg"
+                    alt="Cikago sa 103. sprata"></a>
+                    <a href="https://sh.wikipedia.org/wiki/Michigan_(jezero)" target="blank"><img class="rounded my-1 gborder" src="./slike/WP_20180614_11_45_25_Pro.jpg" alt="Cikago sa jezera"></a>
+
+            </div>
+
+
+
+
+        </div>
+        <footer>
+            <div class="dm text-center mt-5 mb-3">
+
+
+
+                <a type="button" class="mx-2">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a type="button" class=" mx-2">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a type="button" class="light-blue-text mx-2">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a type="button" class="light-blue-text mx-2">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

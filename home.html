@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Skils</title>
+    <title>Pocetna</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,30 +22,60 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 
     <style>
+        body {
+            background-image: url("./slike/monitor-1307227_960_720.jpg");
+            
+            background-size: cpntent;
 
+        } 
+        h1 {
+            font-family: "Tangerine";
+            margin-right: 5%;
+        }
 
+        .krugovi {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+        }
+        h1:hover {
+            color: violet;
+        }
+        h1 span:hover {
+            color: yellowgreen;
+        }
+
+        
+        
+        
     </style>
 </head>
 
 <body>
     <div class="container-fluid mt-5">
+            <div class="sidenav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+          </div>
 
 
 
-        <div id="krugovi" class="text-center mt-3">
-            
-            <h1 class="h1 display-1 text-right" >Ana Ivanovic</h1>
-            
-            <div id="prvi">
-                <div class="cent"><a href="./omeni.html">O meni</a></div>
+        <div class="text-center mt-3">
+
+            <h1 id="naslov" class="h1 display-1 text-lg-right"><span>A</span>na <span>I</span>vanovic</h1>
+
+            <div id="prvi" class="krugovi col-lg-3 offset-lg-1 col-md-5 offset-md-7  col-sm-9 offset-sm-2 row">
+                <div class="m-auto"><a href="./omeni.html">O meni</a></div>
             </div>
 
-            <div id="drugi">
-                <div class="cent"><a href="./projekti.html">Projekti</a></div>
+            <div id="drugi" class="krugovi col-lg-3 offset-lg-4 col-md-5 offset-md-3 col-sm-9 offset-sm-1 row">
+                <div class="m-auto"><a href="./projekti.html">Projekti</a></div>
             </div>
-            
-            <div id="treci">
-                <div class="cent"><a href="./kontaktstrana.html">Kontakt</a></div>
+
+            <div id="treci" class="krugovi col-lg-3 offset-lg-7 col-md-5 offset-md-7 col-sm-9 offset-sm-2  row">
+                <div class="m-auto"><a href="./kontaktstrana.html">Kontakt</a></div>
             </div>
 
         </div>

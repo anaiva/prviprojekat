@@ -1,0 +1,71 @@
+@font-face {
+    src: url('./fontovi/Tangerine/Tangerine-Regular.ttf');
+    font-family: 'Tangerine';
+}
+
+
+
+body {
+    background-color: rgb(34, 102, 187);
+    color: whitesmoke;
+}
+/*linkovi za DM*/
+.dm a i, .dm a{
+    color: rgb(34, 102, 187);
+    border: 2px solid white;
+}
+
+/*pocetna, home*/
+.krugovi {
+    border: 7px dotted white;
+}
+
+/* #prvi {
+    border: 7px dotted violet;
+}
+#drugi {
+    border: 7px dotted greenyellow;
+}
+#treci {
+    border: 7px dotted gold;
+} */
+#prvi:hover {
+    background-color: violet;
+}
+#prvi a:hover {
+    background-color: rgb(163, 23, 163);
+
+}
+#drugi a:hover {
+    background-color: rgb(87, 133, 18);
+
+}
+
+#drugi:hover {
+    background-color: greenyellow;
+}
+#treci a:hover {
+    background-color: rgb(219, 188, 8);
+
+}
+
+#treci:hover {
+    background-color: gold;
+}
+#prvi:hover, #drugi:hover, #treci:hover {
+    border: 2px double white;
+}
+.krugovi a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/*kontakt strana*/
+.form-control {
+    width: 80%;
+}
+/*strana o meni*/
+p:hover {
+    color: pink;
+}
+
