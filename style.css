@@ -5,10 +5,34 @@
 
 
 
+
 body {
-    background-color: rgb(34, 102, 187);
+    /* background-color: rgb(34, 102, 187); */
+    background-color: rgb(3, 41, 88);
     color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
 }
+.zoom:hover {
+    transform: scale(1.1)
+}
+/*navigacija*/
+.nav-item a{
+
+    font-size: 18px;
+}
+.nav-item a:hover{
+
+    font-size: 22px;
+}
+p {
+    font-size: 20px;
+}
+p:hover, h1:hover, h3:hover, form:hover {
+    color: rgb(236, 227, 228);
+}
+
+
+
 /*linkovi za DM*/
 .dm a i, .dm a{
     color: rgb(34, 102, 187);
@@ -16,48 +40,40 @@ body {
 }
 
 /*pocetna, home*/
-.krugovi {
-    border: 7px dotted white;
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(3, 41, 88);
+    overflow-x: hidden;
+    padding-top: 20px;
+    opacity: 0.6;
+}
+.sidenav:hover {
+    background-color: rgb(3, 69, 150);
+    color: rgb(5, 71, 151);
 }
 
-/* #prvi {
-    border: 7px dotted violet;
-}
-#drugi {
-    border: 7px dotted greenyellow;
-}
-#treci {
-    border: 7px dotted gold;
-} */
-#prvi:hover {
-    background-color: violet;
-}
-#prvi a:hover {
-    background-color: rgb(163, 23, 163);
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
 
-}
-#drugi a:hover {
-    background-color: rgb(87, 133, 18);
-
+    .sidenav a:hover{
+        font-size: 30px;
+    }
 }
 
-#drugi:hover {
-    background-color: greenyellow;
-}
-#treci a:hover {
-    background-color: rgb(219, 188, 8);
-
-}
-
-#treci:hover {
-    background-color: gold;
-}
-#prvi:hover, #drugi:hover, #treci:hover {
-    border: 2px double white;
-}
-.krugovi a {
+.sidenav a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
+    font-size: 25px;
     color: whitesmoke;
+    display: block;
+    margin-left:  5px;
 }
 
 /*kontakt strana*/
