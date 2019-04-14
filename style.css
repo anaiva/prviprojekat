@@ -3,18 +3,19 @@
     font-family: 'Tangerine';
 }
 
-
-
-
 body {
     /* background-color: rgb(34, 102, 187); */
     background-color: rgb(3, 41, 88);
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
-.zoom:hover {
-    transform: scale(1.1)
+h3:hover {
+    transform: scale(1.2);
 }
+.zoom:hover {
+    transform: scale(1.1);
+}
+
 /*navigacija*/
 .nav-item a{
 
@@ -27,16 +28,17 @@ body {
 p {
     font-size: 20px;
 }
-p:hover, h1:hover, h3:hover, form:hover {
+p:hover{
     color: rgb(236, 227, 228);
 }
-
-
 
 /*linkovi za DM*/
 .dm a i, .dm a{
     color: rgb(34, 102, 187);
     border: 2px solid white;
+}
+.dm i:hover {
+    transform: scale(1.2);
 }
 
 /*pocetna, home*/
@@ -84,4 +86,62 @@ p:hover, h1:hover, h3:hover, form:hover {
 p:hover {
     color: pink;
 }
+/*strana projekti*/
+
+#galerija {
+  
+    top:500px;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    list-style:none;
+    width:955px;
+    height:450px;
+    border-radius:3px;
+    overflow:hidden;
+    box-shadow:1px 1px 3px 1px;
+    padding: 0;
+  }
+  
+  
+  #galerija li {
+    
+    width:190px;
+    height:450px;
+    float:left;
+    border-left:1px solid white;
+    -webkit-transition:all 0.7s;
+    -moz-transition:all 0.7s;
+    transition:all 0.7s;
+    box-shadow:-2px 0 10px 2px;
+  }
+  
+  #galerija li:first-child {
+    border:none;
+  }
+  
+  #galerija span {
+    
+    bottom:0;
+    width:50%;
+    color:white;
+    white-space:nowrap;
+    padding:20px;
+  }
+
+  #galerija img {
+    width:800px;
+    height:450px;
+  }
+  
+  #galerija:hover li {
+    width:50px; 
+    background-color: rgb(3, 69, 150); 
+  }
+  
+  
+  #galerija li:hover {
+    width:750px;
+  }
 
