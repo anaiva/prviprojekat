@@ -20,57 +20,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
     <link rel="stylesheet" type="text/css" href="./style.css">
-
-    <style>
-        h3 {
-            font-family: 'Tangerine'
-        }
-
-        img {
-            width: 100%;
-            height: 170px;
-
-
-        }
-
-        .column {
-            max-width: 30%;
-
-        }
-
-        #prviR {
-            border: 7px dotted violet;
-            background-image: linear-gradient(rgb(34, 102, 187), rgb(3, 41, 88));
-        }
-
-        #drugiR {
-            border: 7px dotted yellowgreen;
-            background-image: linear-gradient(rgb(34, 102, 187), rgb(3, 41, 88));
-        }
-
-        #treciR {
-            border: 7px dotted gold;
-            background-image: linear-gradient(rgb(34, 102, 187), rgb(3, 41, 88));
-        }
-
-        .golborder,
-        .gborder,
-        .vborder {
-            border: 5px solid
-        }
-
-        .gborder {
-            border-color: yellowgreen;
-        }
-
-        .vborder {
-            border-color: violet;
-        }
-
-        .golborder {
-            border-color: gold;
-        }
-    </style>
 </head>
 
 <body>
@@ -81,7 +30,6 @@
             </button>
 
             <div class="collapse navbar-collapse" id="collapseid">
-
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link text-light" href="./home.html">Home</a>
@@ -89,28 +37,24 @@
                     <li class="nav-item ">
                         <a class="nav-link text-light" href="./omeni.html">O meni</a>
                     </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link text-light" href="./projekti.html" active>Projekti</a>
-
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-light" href="./kontaktstrana.html">Kontakt</a>
-
                     </li>
                 </ul>
-
             </div>
         </nav>
-        <h3 class="d-inline h3 display-4 ml-3">Projekti</h3>
-        <p class="d-inline ml-3">Za sada je u ovom odljku galerija slika</p>
+        <h3 class="d-inline h3 display-4 ml-5">Projekti</h3>
+        <p class="d-md-inline d-block ml-5">Za sada je u ovom odljku galerija slika.</p>
 
-        <ul id="galerija" class="mt-5">
+        <!-- za vece ekrane -->
+        <ul id="galerija" class="mt-5 d-lg-block d-none">
             <li>
                 <span>Hong Kong</span>
                 <a href="https://sh.wikipedia.org/wiki/Hong_Kong" target="blank"><img
                         src='./slike/hong-kong-864884_1280.jpg' alt="Hong Kong"></a>
-
             <li>
                 <span>Bangkok</span>
                 <a href="https://sh.wikipedia.org/wiki/Bangkok" target="blank"><img
@@ -131,6 +75,29 @@
                         src="./slike/new-york-city-2263343_1280.jpg" alt="New York"></a>
             </li>
         </ul>
+        <!-- za manje ekrane -->
+        <div class="row mx-auto d-lg-none text-center text-md-left">
+            <div class="col-md-6 col-12">
+                <span>Hong Kong</span>
+                <a href="https://sh.wikipedia.org/wiki/Hong_Kong" target="blank"><img
+                        class="rounded border border-light" src='./slike/hong-kong-864884_1280.jpg' alt="Hong Kong"
+                        style="width: 100%;height: 170px;"></a>
+                <span>Bangkok</span>
+                <a href="https://sh.wikipedia.org/wiki/Bangkok" target="blank"><img class="rounded border border-light"
+                        src='./slike/grand-palace-1822487_1280.jpg' alt="Bangkok"
+                        style="width: 100%;height: 170px;"></a>
+            </div>
+            <div class="col-md-6 col-12">
+                <span>Chicago</span>
+                <a href="https://sh.wikipedia.org/wiki/Chicago" target="blank"><img class="rounded border border-light"
+                        src='./slike/chicago-1791002_1280.jpg' alt="Chicago" style="width: 100%;height: 170px;"></a>
+                </li>
+                <span>New York</span>
+                <a href="https://sh.wikipedia.org/wiki/New_York" target="blank"><img class="rounded border border-light"
+                        src="./slike/new-york-city-2263343_1280.jpg" alt="New York"
+                        style="width: 100%;height: 170px;"></a>
+            </div>
+        </div>
 
         <footer class="dm text-center mt-5 mb-3">
             <a type="button" class="mx-2">
@@ -145,9 +112,7 @@
             <a type="button" class="light-blue-text mx-2">
                 <i class="fab fa-github"></i>
             </a>
-
         </footer>
     </div>
 </body>
-
 </html>
